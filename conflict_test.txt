@@ -1,1 +1,1 @@
-This line is from the main branch branch simulating merge conflicts
+This line is from the main branch branch simulating merge conflicts and this is a conflict fix
