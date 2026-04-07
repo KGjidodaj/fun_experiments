@@ -65,6 +65,7 @@ W="7m"
 
 colour_function() {
 
+<<<<<<< HEAD
 	# Quick check to see if it works
 	second_part=$2
 	String=$3
@@ -76,6 +77,14 @@ colour_function() {
 		fi
 	fi
 
+=======
+	# setting up the characteristic first part, the colour second part and the string as variables
+	first_part=${!1}
+	second_part=${!2}
+	String=$3
+
+	# Text is done to combine the characteristic with the colour
+>>>>>>> 18656b9 (docs: finalize R&D sandbox architecture and structure experiment documentation)
 	Text="$first_part$second_part"
 	string="$Text $String $Reset"
 	return 0
@@ -83,8 +92,14 @@ colour_function() {
 }
 
 
+<<<<<<< HEAD
 echo "starting"
 colour_function "Bold" "Red" "Hello World"
+=======
+echo "inputting string with characteristic, colour and string"
+
+colour_function "High_Int_Backg" "G" "Hello World"
+>>>>>>> 18656b9 (docs: finalize R&D sandbox architecture and structure experiment documentation)
 echo -e " $string"
 
 
