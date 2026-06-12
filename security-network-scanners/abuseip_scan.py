@@ -31,5 +31,4 @@ alert = response.json()
 ip = alert["data"]["ipAddress"]
 score = alert["data"]["abuseConfidenceScore"]
 
-print(score)
-print(ip)
+print(score,ip)
