@@ -33,5 +33,10 @@ An experiment in Terminal User Experience (UX) and standard output manipulation.
 * **How it works:** Evaluates the dynamic rendering of text colors and formatting securely within the Bash environment using native ANSI escape codes (`\033`). It ensures that visual UI elements can be deployed without corrupting background logging streams.
 * **The Origin Story:** While running the `top` command, I noticed how certain background elements lit up dynamically. I researched how to replicate this  behavior, discovered ANSI escape codes and decided to implement them from scratch.
 
+#### 5. Network scanning and data parsing with python (`/security-network-scanners`)
+A simple implementation of an alerts file (alerts.json) where an api request is sent to abuseip.com and responds with data about the IP.
+* **How it works:** A bash script calls a python script that uses an ApiKey(.env) and IP(alerts.json) to request the score of the IP and then alerts the user via Webhook if the score is more than 50.
+* **The Origin Story** I wanted to simulate json data parsing, scanning the output and alerting the user the same way an enterprise-grade program would (e.g CrowdSec).
+
 ---
 *Note: Built via Headless SSH sessions. All code was authored directly in the terminal via the `nano` editor for Bash scripts and `.c` files. Python files were drafted in VS Code and deployed via CLI editors.*
