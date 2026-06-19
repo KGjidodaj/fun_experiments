@@ -4,7 +4,7 @@ source .env
 
 apikey="$KEY"
 
-output=$(python3 abuseip_scan.py $apikey)
+output=$(python3 abuseip_scan.py "$apikey")
 
 score=$(echo "$output" | awk '{print $1}')
 

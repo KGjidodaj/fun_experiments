@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-read -p "How many accounts do you want to create? " number
+read -r -p "How many accounts do you want to create? " number
 echo "Generating..."
 
 for ((i=1; i<=number; i++))
